@@ -1,0 +1,26 @@
+#ifndef MUTANTSTACK_HPP
+#define MUTANTSTACK_HPP
+
+#include <stack>
+#include <deque>
+
+
+template <class T, class Container = std::deque<T> >
+class MutantStack : public std::stack<T, Container>{
+    public:
+        MutantStack();
+        MutantStack(const MutantStack& other);
+        MutantStack& operator=(const MutantStack& other);
+        ~MutantStack();
+
+        typedef typename Container::iterator iterator;
+
+        iterator        begin();
+        iterator        end();
+
+    private:
+};
+
+#include "MutantStack.tpp"
+
+#endif

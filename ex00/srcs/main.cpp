@@ -4,7 +4,6 @@
 #include <list>
 
 int main(void){
-    std::cout<<"Hello World"<<std::endl;
     std::vector<int> myVector;
     std::list<int> myList;
 
@@ -17,7 +16,6 @@ int main(void){
     myVector.push_back(4);
     myVector.push_back(5);
     myVector.push_back(42);
-    //add_item(myVector, "4");
     try{
     std::vector<int>::iterator it = easyfind(myVector, 42);
     std::cout<<"vector found! : "<<*it<<std::endl;
