@@ -3,7 +3,6 @@
 
 int main()
 {
-    //std::cout<<"Hello World"<<std::endl;
 MutantStack<int> mstack;
 mstack.push(5);
 mstack.push(17);
